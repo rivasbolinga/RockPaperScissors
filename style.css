@@ -1,0 +1,29 @@
+.buttons{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.results {
+  margin: 150px 0 0 400px
+}
+
+.scores {
+  margin-top: 50px;
+  display: flex;
+  gap: 500px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  height: 150px;
+  width: 150px;
+  background-color: bisque;
+  border: 1px solid;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 0 0 10px;
+}

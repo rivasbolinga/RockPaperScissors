@@ -13,36 +13,83 @@ function selectCoice (){
 
 
 
+const results = document.querySelector('.results');
+const player = document.querySelector('.player');
+const compu = document.querySelector('.compu');
+let scorePlayer = 0;
+let scoreCompu = 0;
+const scorePlayerN = document.querySelector('.score-n-player');
+const scoreCompuN = document.querySelector('.score-n-compu');
 
-//Play once
+// Round
 
-function playRound(playerSelectionE, computerSelectione) {
-const choice = prompt("Si, fu, mi");
-const playerSelection = choice.toLowerCase()
+function playRound(playerSelection, computerSelectione) {
+
 const computerSelection = selectCoice();
 
 if(playerSelection  === computerSelection){
-  console.log("drow")
+  results.textContent = "Drow!!Try again";
 } if (playerSelection === "rock" && computerSelection === "scissors"){
-  console.log("You win");
+  results.textContent = "YOU WIN";
+  scorePlayer++;
+  scorePlayerN.textContent = scorePlayer;
+  player.textContent = scorePlayer;
 } if (playerSelection === "rock" && computerSelection === "paper"){
-  console.log("You have lost");
+  results.textContent = "Sorry! You have lost, try again!!";
+  scoreCompu++;
+  scoreCompuN.textContent = scoreCompu;
 } if (playerSelection === "scissors" && computerSelection === "paper"){
-  console.log("You won");
+  results.textContent = "YOU WIN";
+  scorePlayer++;
+  scorePlayerN.textContent = scorePlayer;
 } if (playerSelection === "scissors" && computerSelection === "rock"){
-  console.log("You have lost");
+  results.textContent = "Sorry! You have lost, try again!!";
+  scoreCompu++;
+  scoreCompuN.textContent = scoreCompu;
 } if (playerSelection === "paper" && computerSelection === "scissors"){
-  console.log("You have lost");
+  results.textContent = "Sorry! You have lost, try again!!";
+  scoreCompu++;
+  scoreCompuN.textContent = scoreCompu;
 } if (playerSelection === "paper" && computerSelection === "rock"){
-  console.log("You win");
+  results.textContent = "YOU WIN";
+  scorePlayer++;
+  scorePlayerN.textContent = scorePlayer;
 }
 }
 
-
-function game(){
- 
-  for(let i=0; i<5; i++){
-    playRound();
-  }
+function restartgame(){
+  scoreCompu = scorePlayer = 0;
+  scorePlayerN.textContent = 0;
+  scoreCompuN.textContent = 0;
 }
-game();
+
+//score until 5
+function game(playerSelection, computerSelectione){
+ playRound(playerSelection,);
+ if(scoreCompu === 5 ){
+  results.textContent = "The computer riched 5 points, You have lost the match";
+   restartgame()
+ }  if(scorePlayer === 5 ){
+  results.textContent = "You have riched 5 points!!! YOU WIN THE MATCH";
+   restartgame()
+ }
+
+ }
+
+
+const scissorsBtn = document.querySelector('.scissors');
+const rockBtn = document.querySelector('.rock');
+const paperBtn = document.querySelector('.paper');
+
+function playRock(){
+  game("rock");
+}
+function playPaper(){
+  game("paper");
+}
+function playScissors(){
+  game("scissors");
+}
+rockBtn.addEventListener('click', playRock);
+paperBtn.addEventListener('click', playPaper);
+scissorsBtn.addEventListener('click', playScissors);
