@@ -77,19 +77,31 @@ function game(playerSelection, computerSelectione){
  }
 
 
-const scissorsBtn = document.querySelector('.scissors');
-const rockBtn = document.querySelector('.rock');
-const paperBtn = document.querySelector('.paper');
+// const scissorsBtn = document.querySelector('.scissors');
+// const rockBtn = document.querySelector('.rock');
+// const paperBtn = document.querySelector('.paper');
 
-function playRock(){
-  game("rock");
-}
-function playPaper(){
-  game("paper");
-}
-function playScissors(){
-  game("scissors");
-}
-rockBtn.addEventListener('click', playRock);
-paperBtn.addEventListener('click', playPaper);
-scissorsBtn.addEventListener('click', playScissors);
+// function playRock(){
+//   game("rock");
+// }
+// function playPaper(){
+//   game("paper");
+// }
+// function playScissors(){
+//   game("scissors");
+// }
+// rockBtn.addEventListener('click', playRock);
+// paperBtn.addEventListener('click', playPaper);
+// scissorsBtn.addEventListener('click', playScissors);
+//
+const buttonsContainer = document.querySelector('.buttons');
+
+buttonsContainer.addEventListener('click', function(e){
+  const clicked = e.target.classList.value;
+
+  if(!clicked) return;
+
+  
+  game(clicked);
+
+})
