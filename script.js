@@ -11,8 +11,10 @@ const buttonsContainer = document.querySelector('.buttons');
 const scissorsBtn = document.querySelector('.scissors');
 const paperBtn = document.querySelector('.paper');
 const rockBtn = document.querySelector('.rock');
-
-
+const modal = document.querySelector('.modal');
+const overlay= document.querySelector('.overlay');
+const closeModal = document.querySelector('.close-modal');
+const modalText = document.querySelector('.modal-text')
 //Add event to weapon buttons
 
 scissorsBtn.addEventListener('click', ()=> playerChoice('scissors'));
@@ -74,11 +76,12 @@ if(playerSelection  === computerSelection){
 function game(playerSelection, computerSelection){
  playRound(playerSelection,computerSelection);
  if(scoreCompu === 5 ){
-  results.textContent = "The computer riched 5 points, You have lost the match";
-   restartgame()
+  openModal();
+  modalText.textContent = 'Sorry, The Machine has riched 5 points.YOU HAVE LOST'
+   
  }  if(scorePlayer === 5 ){
-  results.textContent = "You have riched 5 points!!! YOU WIN THE MATCH";
-   restartgame()
+  openModal();
+  modalText.textContent = 'CONGRATULATIONS!!You have riched 5 points. YOU HAVE WIN!!'
  }
 
  }
@@ -87,6 +90,19 @@ function game(playerSelection, computerSelection){
   scoreCompu = scorePlayer = 0;
   scorePlayerN.textContent = 0;
   scoreCompuN.textContent = 0;
+  results.textContent = "";
 }
 
+//open modal
+const openModal = function () {
+  modal.classList.add('active');
+  overlay.classList.add('active');
+}
 
+//close modal
+
+closeModal.addEventListener('click', function() {
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+  restartgame()
+})
