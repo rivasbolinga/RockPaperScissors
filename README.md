@@ -20,4 +20,4 @@ Simple implementation of Rock Paper Scissors game, from The Odin Project curricu
 
 > Here you can see the live demo of the website:
 
-- [Live Demo Link]()
+- [Live Demo Link](https://rivasbolinga.github.io/RockPaperScissors/)

@@ -166,7 +166,8 @@ footer {
   }
 
   .rules {
-    font-size: 13px;
+    font-size: 15px;
+    width: 200px;
   }
 
   button {
