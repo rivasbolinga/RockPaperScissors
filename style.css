@@ -11,19 +11,19 @@ p {
   margin: 0;
   padding: 0;
 }
-.buttons{
+
+.buttons {
   display: flex;
   gap: 50px;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .score-text {
   width: 200px;
   font-size: 30px;
   font-family: 'Rubik Bubbles', sans-serif;
-  font-size: 30px;
   color: rgba(255, 166, 0, 0.824);
   text-align: center;
   align-self: flex-start;
@@ -32,7 +32,7 @@ p {
 .scores {
   margin-top: 70px;
   display: flex;
-  gap: 80px; 
+  gap: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -44,7 +44,7 @@ p {
   font-family: "Roboto", sans-serif;
   padding: 10px 0 0 10px;
   margin-left: 40px;
-  color:  rgb(35, 54, 71);
+  color: rgb(35, 54, 71);
 }
 
 .score-n-player {
@@ -80,7 +80,7 @@ p {
   align-items: center;
   font-family: 'Indie Flower', cursive;
   font-size: 30px;
-  color:  rgb(35, 54, 71);
+  color: rgb(35, 54, 71);
 }
 
 .rules {
@@ -95,9 +95,6 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-}
-.buttons {
-  margin-top: 60px;
 }
 
 footer {
@@ -119,7 +116,7 @@ footer {
   width: 300px;
   padding: 30px;
   border-radius: 10px;
-  background-color:  rgb(35, 54, 71);
+  background-color: rgb(35, 54, 71);
   font-family: 'Indie Flower', cursive;
   border: 2px solid white;
   color: white;
@@ -153,66 +150,70 @@ footer {
   margin-top: 20px;
   width: 80px;
   height: 50px;
-  background-color:rgba(255, 166, 0, 0.988); ;
+  background-color: rgba(255, 166, 0, 0.988);
 }
-@media only screen and (max-width:768px ){
-  
+
+@media only screen and (max-width: 768px) {
   .title-header {
     font-size: 25px;
+    height: 90px;
   }
 
   .instructions {
     font-size: 16px;
     text-align: center;
+    padding-top: 20px;
   }
+
   .rules {
     font-size: 13px;
   }
+
   button {
     height: 80px;
     width: 80px;
   }
+
   .buttons {
-    gap: 20px
+    gap: 20px;
   }
 
   .scores {
     margin-top: 30px;
     gap: 0;
-
-    
   }
 
   .score {
     font-size: 20px;
     margin: 0;
+    height: 80px;
   }
 
   .score-n-player {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 15px;
   }
 
   .score-n-compu {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 15px;
   }
 
   .score-text {
-    margin-top: 100px;
-    font-size: 20px;
-  }
-  .score-tit {
-    font-size: 15px;
+    margin-top: 40px;
+    font-size: 16px;
   }
 
-  .your {
-    padding: 0;
-    margin: 0;
+  .score-tit {
+    font-size: 12px;
   }
 
   .modal {
     max-width: 250px;
     font-size: 12px;
+  }
+
+  footer {
+    margin-top: 0;
   }
 }
