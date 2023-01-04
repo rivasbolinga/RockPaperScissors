@@ -1,6 +1,17 @@
+body {
+  background-color: rgba(150, 148, 148, 0.115);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
 .buttons{
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -13,7 +24,7 @@
 .scores {
   margin-top: 50px;
   display: flex;
-  gap: 500px; 
+  gap: 300px; 
   justify-content: center;
   align-items: center;
 }
@@ -21,9 +32,58 @@
 .score {
   height: 150px;
   width: 150px;
-  background-color: bisque;
-  border: 1px solid;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Roboto", sans-serif;
   padding: 10px 0 0 10px;
+  margin-left: 40px;
+  color:  rgb(35, 54, 71);
 }
+
+.score-n-player {
+  font-size: 60px;
+  margin-top: 20px;
+  font-family: 'Rubik Bubbles', sans-serif;
+}
+
+.score-n-compu {
+  font-size: 60px;
+  margin-top: 20px;
+  font-family: 'Rubik Bubbles', sans-serif;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(35, 54, 71);
+  height: 150px;
+  font-family: 'Rubik Bubbles', sans-serif;
+  font-size: 40px;
+  color: rgba(255, 166, 0, 0.824);
+}
+
+.instructions {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  color:  rgb(35, 54, 71);
+}
+
+.rules {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+button {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+

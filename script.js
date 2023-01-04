@@ -10,9 +10,6 @@ function selectCoice (){
 }
 //plyer Selection with prompt
 
-
-
-
 const results = document.querySelector('.results');
 const player = document.querySelector('.player');
 const compu = document.querySelector('.compu');
@@ -77,22 +74,6 @@ function game(playerSelection, computerSelectione){
  }
 
 
-// const scissorsBtn = document.querySelector('.scissors');
-// const rockBtn = document.querySelector('.rock');
-// const paperBtn = document.querySelector('.paper');
-
-// function playRock(){
-//   game("rock");
-// }
-// function playPaper(){
-//   game("paper");
-// }
-// function playScissors(){
-//   game("scissors");
-// }
-// rockBtn.addEventListener('click', playRock);
-// paperBtn.addEventListener('click', playPaper);
-// scissorsBtn.addEventListener('click', playScissors);
 //
 const buttonsContainer = document.querySelector('.buttons');
 
