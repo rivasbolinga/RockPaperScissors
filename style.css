@@ -17,14 +17,20 @@ p {
   margin-top: 30px;
 }
 
-.results {
-  margin: 150px 0 0 400px
+.score-text {
+  width: 200px;
+  font-size: 30px;
+  font-family: 'Rubik Bubbles', sans-serif;
+  font-size: 30px;
+  color: rgba(255, 166, 0, 0.824);
+  text-align: center;
+  align-self: flex-start;
 }
 
 .scores {
   margin-top: 50px;
   display: flex;
-  gap: 300px; 
+  gap: 80px; 
   justify-content: center;
   align-items: center;
 }
@@ -86,4 +92,12 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
-
+footer {
+  background-color: rgb(35, 54, 71);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+}
