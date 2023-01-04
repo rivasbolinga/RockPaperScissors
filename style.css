@@ -154,6 +154,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    min-height: 100%;
+  }
+
   .title-header {
     font-size: 25px;
     height: 130px;
@@ -217,4 +221,5 @@ footer {
   footer {
     margin-top: 100px;
   }
+
 }
