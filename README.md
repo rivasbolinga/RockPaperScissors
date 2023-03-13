@@ -1,5 +1,7 @@
 # Rock Paper Scissors
 
+<img width="1440" alt="Screenshot 2023-03-13 at 22 00 01" src="https://user-images.githubusercontent.com/103900838/224830574-dc191b77-2dfc-4b81-9b00-66cb2cbf94d3.png">
+
 Simple implementation of Rock Paper Scissors game, from The Odin Project curriculum.
 
 ## 🛠 Built With <a name="built-with"></a>
