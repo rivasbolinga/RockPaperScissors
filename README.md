@@ -13,13 +13,13 @@ Simple implementation of Rock Paper Scissors game, from The Odin Project curricu
 ### Key Features <a name="key-features"></a>
 
 
-- **[Totally responsive website]**
-- **[Random choice for the machine]**
-- **[5 rounds game]**
-- **[Open modal when the game is finish]**
+- **Totally responsive website**
+- **Random choice for the machine**
+- **5 rounds game**
+- **Open modal when the game is finish**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Here you can see the live demo of the website:
+Here you can see the live demo of the website:
 
 - [Live Demo Link](https://rivasbolinga.github.io/RockPaperScissors/)
