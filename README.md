@@ -23,3 +23,15 @@ Simple implementation of Rock Paper Scissors game, from The Odin Project curricu
 Here you can see the live demo of the website:
 
 - [Live Demo Link](https://rivasbolinga.github.io/RockPaperScissors/)
+
+
+
+
+<!-- SUPPORT -->
+## ⭐️ Show your support <a name="support"></a>
+
+<!-- > Write a message to encourage readers to support your project -->
+Happy to have you here! If you like this project please Give us a ⭐️ !
+Thank you so much!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
